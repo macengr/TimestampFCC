@@ -6,6 +6,7 @@ var date;
 var natDate;
 var unixDate;
 var nat;
+var port = process.env.PORT || 8080;
 
 app.use(function(request, response) {
     
@@ -135,7 +136,7 @@ app.use(function(request, response) {
 
 });
 
-app.listen(8080, function () {
+app.listen(port, function () {
     console.log('Listening on port 8080...');
 });
 
